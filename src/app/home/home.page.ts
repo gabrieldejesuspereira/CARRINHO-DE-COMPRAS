@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component } from '@angular/core'; 
+import { Bancodedados001Service } from './../Bancodedados001.service';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private bd: Bancodedados001Service) {}
 
 }
